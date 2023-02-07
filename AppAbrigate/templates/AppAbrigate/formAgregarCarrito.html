@@ -1,0 +1,14 @@
+{% extends "AppAbrigate/padre.html" %}
+
+{% block titulo1 %}
+    Agregar producto al carrito
+{% endblock %}
+
+{% block formulario %}
+
+<form action="" method="POST"> {% csrf_token%}
+    {{frmCarrito.as_p}}
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock %}

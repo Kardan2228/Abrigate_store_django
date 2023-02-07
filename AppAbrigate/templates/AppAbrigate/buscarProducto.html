@@ -1,0 +1,14 @@
+{% extends "AppAbrigate/padre.html" %}
+
+{% block titulo1 %}
+    Buscar productos
+{% endblock %}
+
+{% block formulario %}
+
+<form action="/store/resultados_productos/" method="GET">
+    <input type="text" name = "nombre" id="nombre">
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}

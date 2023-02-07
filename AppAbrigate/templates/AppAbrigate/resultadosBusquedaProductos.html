@@ -1,0 +1,12 @@
+{% extends "AppAbrigate/padre.html" %}
+
+{% block titulo1 %}
+    Buscar productos
+{% endblock %}
+
+{% block formulario %}
+    <p>Los resultados nuevos coincidentes con <strong>{{resultado}}</strong> son:</p>
+    {% for producto in productos %}
+        <p>id: {{producto.id}} ------ Nombre: {{producto.nombre}} ----- Descripción: {{producto.descripcion}} ----- Talla: {{producto.talla}} ----- Existencia: {{producto.existencia}}</p>
+    {% endfor%}
+{% endblock %}
